@@ -12,11 +12,9 @@ Versão do Appium - v1.13.0;
 
 Versão do Eclipse IDE for Java Developers - Version: 2019-06 (4.12.0);
 
-Para especificar os dados do device no teste é necessário modificar os dados na classe DriverSingleton.java 
-(caminho: https://github.com/ecmayo/SantanderProject/tree/master/src/test/java/com/santander/automation/appium);
+Para especificar os dados do device no teste é necessário modificar os dados na classe <a href="https://github.com/ecmayo/SantanderProject/tree/master/src/test/java/com/santander/automation/appium)">DriverSingleton.java</a>;
 
-Executar o junit na classe StepRunnerTest.java 
-(caminho: https://github.com/ecmayo/SantanderProject/tree/master/src/test/java/com/santander/automation/cucumberOptions);
+Executar o junit na classe <a href="https://github.com/ecmayo/SantanderProject/tree/master/src/test/java/com/santander/automation/cucumberOptions)">StepRunnerTest.java</a>;
 
 ### * Dependências
 <ul>
@@ -30,5 +28,4 @@ Executar o junit na classe StepRunnerTest.java
          
 ### * Cenários
 
-Os cenários foram todos especificados conforme a estrutura do BDD como solicitado, porém vale ressaltar que as features são voltadas a entendimento conjunto da equipe na ação do usuário antes mesmo do aplicativo existir.
-(caminho: https://github.com/ecmayo/SantanderProject/tree/master/src/test/java/com/santander/automation/features).
+Os cenários foram todos especificados conforme a estrutura do BDD como solicitado, porém vale ressaltar que as <a href="https://github.com/ecmayo/SantanderProject/tree/master/src/test/java/com/santander/automation/features)">features</a> são voltadas a entendimento conjunto da equipe na ação do usuário antes mesmo do aplicativo existir.
