@@ -11,7 +11,7 @@ Feature: Novo Cálculo
     And o comprimento do meu pacote é maior que 16cm, a largura maior que 11cm e a altura maior que 2cm
     And o peso for até 300g
     And eu escolho o tipo de serviço de Mão Própria
-    Then terei os Resultado dos Cálculo
+   Then terei os Resultado dos Cálculo
 
   #		| Data		       | 31/07/2019    |
   #		|Cep de Origem   | 64546455      |

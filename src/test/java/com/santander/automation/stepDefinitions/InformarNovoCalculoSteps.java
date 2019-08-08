@@ -4,6 +4,7 @@ import java.net.MalformedURLException;
 
 import com.santander.automation.mobile.pages.android.OriginAndDestinyPage;
 import com.santander.automation.mobile.pages.android.PackageCharacteristicsPage;
+import com.santander.automation.mobile.pages.android.ServiceOptionalPage;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -13,6 +14,7 @@ public class InformarNovoCalculoSteps {
 
 	OriginAndDestinyPage priceAndTermPage = new OriginAndDestinyPage();
 	PackageCharacteristicsPage packagePage = new PackageCharacteristicsPage();
+	ServiceOptionalPage serviceOptional = new ServiceOptionalPage();
 
 	@Given("que possuo uma encomenda que preciso enviar do meu CEP de Origem até um determinado CEP de Destino")
 	public void launchApplication() throws MalformedURLException {
@@ -39,8 +41,17 @@ public class InformarNovoCalculoSteps {
 	@And("o peso for até 300g")
 	public void insertWeightOption() {
 		packagePage.swipeSeekBarWeight();
+		packagePage.clickNextSteps();
 	}
-//	
+
+	@And ("eu escolho o tipo de serviço de Mão Própria")
+	public void ownHandTypeOfService () {
+		//serviceOptional.ownHandService();
+		serviceOptional.valueStatementService();
+	}
+	
+	
+	
 //	@Then("eu seleciono uma {string} válida")
 //	public void inputDate(String date) {
 //		driver.findElement(By.id("txt_data")).click();

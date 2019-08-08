@@ -1,6 +1,7 @@
 package com.santander.automation.mobile.pages.android;
 
 import java.net.MalformedURLException;
+import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,6 +23,12 @@ public class OriginAndDestinyPage {
 		driverSingleton.waitVar.until(ExpectedConditions.visibilityOfElementLocated(By.id("navigation_drawer"))); 
 		driverSingleton.driver.navigate().back();
 
+		
+//		Opções do menu sem id		
+//		List<MobileElement> list = driverSingleton.driver.findElements(By.xpath("//android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ListView/android.widget.LinearLayout[1]/android.widget.TextView");
+//				    list.get(0).click();
+
+				
 		driverSingleton.driver.findElement(By.id("txt_data")).click();
 
 		driverSingleton.driver.findElement(By.xpath("//android.widget.NumberPicker[@index='0']")).sendKeys("Jan"); 

@@ -92,7 +92,12 @@ public class PackageCharacteristicsPage {
 		DecimalFormat df = new DecimalFormat("0.#");
 		String seekBarValue = df.format(moveTo);
 		
-		assertEquals(seekBarValue, displayStr);
-		System.out.println("displayStr ----------------> "+ displayStr);
+//		Comparar o valor informado na seekbar com o do campo Peso 		
+//		assertEquals(seekBarValue, displayStr); 
+//		System.out.println("displayStr ----------------> "+ displayStr);
+	}
+	
+	public void clickNextSteps() {
+		driverSingleton.driver.findElement(By.id("button_prox")).click();
 	}
 }
